@@ -10,8 +10,8 @@ public class ValidationConfig {
     @Bean
     public MethodValidationPostProcessor methodValidationPostProcessor() {
         MethodValidationPostProcessor methodValidationPostProcessor = new MethodValidationPostProcessor();
-        // methodValidationPostProcessor.setOrder(1000);
-        methodValidationPostProcessor.setBeforeExistingAdvisors(true); // Fix for the current problem.
+        methodValidationPostProcessor.setOrder(1000);
+        // methodValidationPostProcessor.setBeforeExistingAdvisors(true); // Fix for the current problem.
         return methodValidationPostProcessor;
     }
 
